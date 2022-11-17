@@ -16,6 +16,7 @@ public class GameMap
     {
         //TODO Calculate Position
         return new Position(0,0);
+      
     }
     public bool IsPositionValid()
     {
