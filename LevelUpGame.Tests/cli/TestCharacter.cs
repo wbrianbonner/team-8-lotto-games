@@ -4,13 +4,6 @@ namespace levelup.cli
 {
 class TestCharacter: Character
 {    
- //   public override string Name{
- //       get{
- //           return "Teammate";
- //       };
- //       set;
- //   }
-
     public void EnterMap()
     {
         //TODO EnterMap
@@ -20,6 +13,11 @@ class TestCharacter: Character
     {
         return new Position(0,0);
     }
+    public override string GetName()
+    {
+        return "Fake Character";
+    }
+    
 
 //    public void Move(Direction direction)
 //    {
