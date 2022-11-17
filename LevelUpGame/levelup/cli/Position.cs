@@ -1,7 +1,7 @@
 using System.Drawing;
 namespace levelup.cli
 {
-class Position
+public class Position
 {    
     Point coordinates;
 
