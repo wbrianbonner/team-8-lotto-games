@@ -4,7 +4,7 @@ namespace levelup.cli
 {
 public class FakeGameMap: GameMap
 {
-    Position startingPosition = new Position(0,0);
+    Position StartingPosition = new Position(0,0);
     int numPositions = 100;
     public FakeGameMap()
     {
@@ -22,6 +22,12 @@ public class FakeGameMap: GameMap
     {
         //TODO Write logic of Move
         return 100;
+    }
+    public override Position CalculatePosition(Position startingPosition, GameController.DIRECTION direction)
+    {
+        //TODO Calculate Position
+        return new Position(0,1);
+      
     }
   
 }

@@ -27,7 +27,10 @@ namespace levelup
         {
             FakeGameMap TestGameMap = new FakeGameMap();
             Position newPosition = testObj.EnterMap(TestGameMap);
+            TestContext.Out.WriteLine(newPosition.coordinates.X);
+            TestContext.Out.WriteLine(newPosition.coordinates.Y);
             var corCheck = Check(newPosition.coordinates.X) && Check(newPosition.coordinates.Y);
+            TestContext.Out.WriteLine(corCheck);
             Assert.IsTrue(corCheck);
 
 
@@ -35,6 +38,7 @@ namespace levelup
         }
         private bool Check(int x)
         {
+  
             return x>=0 && x<=9;
         }
         
