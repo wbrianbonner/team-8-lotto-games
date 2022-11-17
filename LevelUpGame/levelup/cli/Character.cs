@@ -23,7 +23,7 @@ public class Character
 
     }
 
-    public void EnterMap()
+    public Position EnterMap()
     {
         //TODO EnterMap
     }

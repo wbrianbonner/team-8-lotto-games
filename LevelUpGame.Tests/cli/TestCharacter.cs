@@ -4,25 +4,25 @@ namespace levelup.cli
 {
 class TestCharacter: Character
 {    
-    public void EnterMap()
+    public Position EnterMap()
     {
-        //TODO EnterMap
+        return new Position(0,0);
     }
 
     public Position CurrentPos()
     {
-        return new Position(0,0);
+        return new Position(5,5);
     }
+
     public override string GetName()
     {
         return "Fake Character";
     }
     
-
-//    public void Move(Direction direction)
-//    {
-//        //TODO Write logic of Move
-//    }
+    public Position Move()
+    {
+        return new Position(6,5);
+    }
 
 }
 }

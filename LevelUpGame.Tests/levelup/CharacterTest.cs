@@ -21,5 +21,13 @@ namespace levelup
 #pragma warning disable CS8602 // Rethrow to preserve stack details
             Assert.IsNotNull(testObj.GetName());
         }
+        
+        [Test]
+        public void EnterMap()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Assert.AreEqual(testObj.EnterMap());
+        }
+        
     }
 }
