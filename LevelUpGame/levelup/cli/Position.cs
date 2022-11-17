@@ -3,7 +3,7 @@ namespace levelup.cli
 {
 public class Position
 {    
-    Point coordinates;
+    public Point coordinates;
 
     public Position(int xCoordinates, int yCoordinates)
     {

@@ -2,7 +2,7 @@ using Sharprompt;
 using System.Collections;
 namespace levelup.cli
 {
-class FakeGameMap: GameMap
+public class FakeGameMap: GameMap
 {
     Position startingPosition = new Position(0,0);
     int numPositions = 100;
@@ -11,10 +11,7 @@ class FakeGameMap: GameMap
         
     } 
     
-    //public void CalculatePosition(Position startingPosition, Direction direction)
-    //{
-        //TODO Calculate Position
-   // }
+    
     public bool IsPositionValid()
     {
         //TODO Logic to be added.
@@ -24,8 +21,8 @@ class FakeGameMap: GameMap
     public int GetTotalPositions()
     {
         //TODO Write logic of Move
-        return 0;
+        return 100;
     }
-
+  
 }
 }

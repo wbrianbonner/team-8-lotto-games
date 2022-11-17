@@ -11,9 +11,10 @@ public class GameMap
     {
         
     } 
-    public void CalculatePosition(Position startingPosition, GameController.DIRECTION direction)
+    public virtual Position CalculatePosition(Position startingPosition, GameController.DIRECTION direction)
     {
         //TODO Calculate Position
+        return new Position(0,0);
     }
     public bool IsPositionValid()
     {
@@ -26,6 +27,7 @@ public class GameMap
         //TODO Write logic of Move
         return 0;
     }
+    
 
 }
 }
