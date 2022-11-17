@@ -1,18 +1,20 @@
-using Sharprompt;
 using System.Collections;
-namespace levelup.cli;
+namespace levelup.cli
 {
 class Character
 {
-    static string DEFAULT_NAME;
+    string DEFAULT_NAME="Test";
     
     public string Name{get;set;}
 
     public Character(string name)
     {
-        if(string.isNullorEmpty(name))
+        if(name!=null && name !="")
         {
             this.Name = name;
+        }
+        else{
+            this.Name = DEFAULT_NAME;
         }
     } 
     public void EnterMap()
@@ -23,10 +25,10 @@ class Character
     {
         //TODO Return type should be position.
     }
-    public void Move(Direction direction)
-    {
+   // public void Move(Direction direction)
+    //{
         //TODO Write logic of Move
-    }
+   // }
 
 }
 }
