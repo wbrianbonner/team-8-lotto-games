@@ -10,6 +10,7 @@ class FakeGameMap: GameMap
     {
         
     } 
+    
     //public void CalculatePosition(Position startingPosition, Direction direction)
     //{
         //TODO Calculate Position
