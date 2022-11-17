@@ -1,14 +1,18 @@
+using System.Drawing;
+
 namespace levelup
 {
     public class GameController
     {
+        
         // TODO: If your stakeholder wants to call this CHARACTER, change var name for
         // low representational gap
         public readonly string DEFAULT_CHARACTER_NAME = "Character";
 
         public record struct GameStatus(
             // TODO: Add other status data
-            String characterName
+            String characterName,
+            Point currentPosition
         );
 
         // TODO: Ensure this AND CLI commands match domain model
@@ -22,6 +26,12 @@ namespace levelup
         public GameController()
         {
             status.characterName = DEFAULT_CHARACTER_NAME;
+            status.currentPosition = new Point(-1,-1);
+        }
+
+        public void SetCharacterPosition(Point coordinates)
+        {
+
         }
 
         // Pre-implemented to demonstrate ATDD
