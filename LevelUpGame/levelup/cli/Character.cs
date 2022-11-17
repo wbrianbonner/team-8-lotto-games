@@ -3,7 +3,7 @@ namespace levelup.cli
 {
 public class Character
 {
-    string DEFAULT_NAME="Test";
+    string DEFAULT_NAME="Beavis";
     
     public virtual string Name{get;set;}
 
