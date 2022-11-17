@@ -1,24 +1,23 @@
 using Sharprompt;
 using System.Collections;
-using levelup;
 namespace levelup.cli
 {
-public class GameMap
+class FakeGameMap: GameMap
 {
-    Position startingPosition = new Position(new Random(9).Next(),new Random(9).Next());
+    Position startingPosition = new Position(0,0);
     int numPositions = 100;
-    public GameMap()
+    public FakeGameMap()
     {
         
     } 
-    public void CalculatePosition(Position startingPosition, GameController.DIRECTION direction)
-    {
+    //public void CalculatePosition(Position startingPosition, Direction direction)
+    //{
         //TODO Calculate Position
-    }
+   // }
     public bool IsPositionValid()
     {
         //TODO Logic to be added.
-        return false;
+        return true;
 
     }
     public int GetTotalPositions()
