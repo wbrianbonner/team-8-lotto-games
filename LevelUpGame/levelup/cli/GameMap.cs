@@ -5,8 +5,9 @@ namespace levelup.cli
 {
 public class GameMap
 {
-    Position startingPosition = new Position(new Random(9).Next(),new Random(9).Next());
+    public Position StartingPosition = new Position(new Random(9).Next(),new Random(9).Next());
     int numPositions = 100;
+    
     public GameMap()
     {
         

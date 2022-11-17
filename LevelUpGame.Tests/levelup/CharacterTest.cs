@@ -25,8 +25,17 @@ namespace levelup
         [Test]
         public void EnterMap()
         {
+            FakeGameMap TestGameMap = new FakeGameMap();
+            Position newPosition = testObj.EnterMap(TestGameMap);
+            var corCheck = Check(newPosition.coordinates.X) && Check(newPosition.coordinates.Y);
+            Assert.IsTrue(corCheck);
+
+
 #pragma warning disable CS8602 // Rethrow to preserve stack details
-            Assert.AreEqual(testObj.EnterMap());
+        }
+        private bool Check(int x)
+        {
+            return x>=0 && x<=9;
         }
         
     }

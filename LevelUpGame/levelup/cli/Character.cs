@@ -23,9 +23,9 @@ public class Character
 
     }
 
-    public Position EnterMap()
+    public Position EnterMap(GameMap map)
     {
-        //TODO EnterMap
+        return map.StartingPosition;
     }
 
     public void CurrentPos()
