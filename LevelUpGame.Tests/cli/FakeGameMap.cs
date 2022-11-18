@@ -23,12 +23,6 @@ public class FakeGameMap: GameMap
         //TODO Write logic of Move
         return 100;
     }
-    public override Position CalculatePosition(Position startingPosition, GameController.DIRECTION direction)
-    {
-        //TODO Calculate Position
-        return new Position(0,1);
-      
-    }
-  
+   
 }
 }
