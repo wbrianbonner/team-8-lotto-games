@@ -7,8 +7,7 @@ public class Position
 
     public Position(int xCoordinates, int yCoordinates)
     {
-      this.coordinates.X = xCoordinates;
-      this.coordinates.Y = yCoordinates;
+      coordinates = new Point(xCoordinates,yCoordinates);
     } 
 }
 }

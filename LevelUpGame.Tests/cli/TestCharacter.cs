@@ -4,11 +4,7 @@ namespace levelup.cli
 {
 class TestCharacter: Character
 {    
-    public Position EnterMap()
-    {
-        return new Position(0,0);
-    }
-
+   
     public Position CurrentPos()
     {
         return new Position(5,5);
