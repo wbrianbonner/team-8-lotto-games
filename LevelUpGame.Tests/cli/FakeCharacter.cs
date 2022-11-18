@@ -2,12 +2,12 @@ using Sharprompt;
 using System.Collections;
 namespace levelup.cli
 {
-class TestCharacter: Character
+class FakeCharacter: Character
 {    
    
-    public Position CurrentPos()
+    public override Position GetCurPosition()
     {
-        return new Position(5,5);
+        return null;
     }
 
     public override string GetName()

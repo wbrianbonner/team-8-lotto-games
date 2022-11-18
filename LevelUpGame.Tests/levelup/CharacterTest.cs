@@ -7,12 +7,12 @@ namespace levelup
     [TestFixture]
     public class CharacterTest
     {
-        private TestCharacter testObj;
+        private FakeCharacter testObj;
 
         [SetUp]
         public void SetUp()
         {
-            testObj = new TestCharacter();
+            testObj = new FakeCharacter();
         }
 
         [Test]

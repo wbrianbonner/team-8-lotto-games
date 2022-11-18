@@ -6,6 +6,7 @@ public class Character
     string DEFAULT_NAME="Quark";
     
     public virtual string Name{get;set;}
+    public Position CurPosition{get;set;}
 
     public Character(string name)
     {
@@ -28,10 +29,11 @@ public class Character
         return map.StartingPosition;
     }
 
-    public void CurrentPos()
+    public virtual Position GetCurPosition()
     {
-        //TODO Return type should be position.
+        return this.CurPosition;
     }
+
     public virtual string GetName()
     {
         return this.Name;
