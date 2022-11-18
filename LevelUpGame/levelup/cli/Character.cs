@@ -7,6 +7,7 @@ public class Character
     
     public virtual string Name{get;set;}
     public Position CurPosition{get;set;}
+    private GameMap map = new GameMap{};
 
     public Character(string name)
     {
@@ -38,10 +39,10 @@ public class Character
     {
         return this.Name;
     }
-    
-    public void Move(Direction direction)
+
+    public void Move(GameController.DIRECTION direction)
     {
-        //TODO Write logic of Move
+        this.CurPosition = map.CalculatePosition(GetCurPosition(),direction);
     }
 
 }
