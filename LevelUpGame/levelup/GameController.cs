@@ -8,7 +8,7 @@ namespace levelup
         // TODO: If your stakeholder wants to call this CHARACTER, change var name for
         // low representational gap
         public readonly string DEFAULT_CHARACTER_NAME = "Character";
-
+        private Character character;
         public record struct GameStatus(
             // TODO: Add other status data
             String characterName,
@@ -38,6 +38,7 @@ namespace levelup
         // TODO: Update this if it does not match your design
         public void CreateCharacter(String name)
         {
+           
             if (name != null && !name.Equals(""))
             {
                 this.status.characterName = name;
@@ -46,6 +47,7 @@ namespace levelup
             {
                 this.status.characterName = DEFAULT_CHARACTER_NAME;
             }
+             character = new Character(this.status.characterName);
         }
 
         public void StartGame()
