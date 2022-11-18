@@ -38,10 +38,11 @@ public class Character
     {
         return this.Name;
     }
-   // public void Move(Direction direction)
-    //{
+    
+    public void Move(Direction direction)
+    {
         //TODO Write logic of Move
-   // }
+    }
 
 }
 }
