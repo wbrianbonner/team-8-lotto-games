@@ -25,9 +25,9 @@ public class Character
 
     }
 
-    public Position EnterMap(GameMap map)
+    public void EnterMap(GameMap map)
     {
-        return map.StartingPosition;
+        this.CurPosition = map.StartingPosition;
     }
 
     public virtual Position GetCurPosition()

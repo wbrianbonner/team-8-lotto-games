@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using levelup;
+using levelup.cli;
 
 namespace levelup
 {
@@ -24,7 +25,14 @@ namespace levelup
         public void IsCharacterCreated()
         {
 #pragma warning disable CS8602 // Rethrow to preserve stack details
-            testObj.CreateCharacter();
+            testObj.CreateCharacter("Test Character");
+            Assert.IsNotNull(testObj.GetStatus().characterName);
+        }
+          [Test]
+        public void StartGameTest()
+        {
+            testObj.CreateCharacter("Test Character");
+            testObj.StartGame();
             Assert.IsNotNull(testObj.GetStatus().characterName);
         }
     }

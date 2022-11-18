@@ -1,4 +1,5 @@
 using System.Drawing;
+using levelup.cli;
 
 namespace levelup
 {
@@ -9,6 +10,7 @@ namespace levelup
         // low representational gap
         public readonly string DEFAULT_CHARACTER_NAME = "Character";
         private Character character;
+        private GameMap map;
         public record struct GameStatus(
             // TODO: Add other status data
             String characterName,
@@ -52,9 +54,9 @@ namespace levelup
 
         public void StartGame()
         {
-            // TODO: Implement startGame - Should probably create tiles and put the character
-            // on them?
-            // TODO: Should also update the game status?
+            character.EnterMap(new GameMap());
+            this.status.currentPosition = character.CurPosition.coordinates;
+
         }
 
         public GameStatus GetStatus()

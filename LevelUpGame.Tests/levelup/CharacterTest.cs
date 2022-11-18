@@ -26,11 +26,8 @@ namespace levelup
         public void EnterMap()
         {
             FakeGameMap TestGameMap = new FakeGameMap();
-            Position newPosition = testObj.EnterMap(TestGameMap);
-            TestContext.Out.WriteLine(newPosition.coordinates.X);
-            TestContext.Out.WriteLine(newPosition.coordinates.Y);
-            var corCheck = Check(newPosition.coordinates.X) && Check(newPosition.coordinates.Y);
-            TestContext.Out.WriteLine(corCheck);
+            testObj.EnterMap(TestGameMap);
+            var corCheck = Check(testObj.CurPosition.coordinates.X) && Check(testObj.CurPosition.coordinates.Y);
             Assert.IsTrue(corCheck);
         }
 
